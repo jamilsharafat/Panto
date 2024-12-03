@@ -1,0 +1,312 @@
+/*font family start*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rajdhani:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*font family end*/
+
+/*common css start*/
+:root{
+    --Lato:"Lato", serif;
+    --rob:"Roboto", sans-serif;
+
+	--ash:#8e8e8e;
+	--black:#333333;
+	
+}
+body{
+	font-family: var(--Lato);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--ash);
+  
+
+
+}
+/*common css end*/
+/*header start*/
+.logo{
+  color: white ;
+  font-weight: 700;
+}
+.navbar-nav .nav-link:focus, 
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link.show {
+  background-color: transparent !important; /* No background */
+  color: white; !important; /* Optional: Change text color */
+  outline: none; /* Removes focus outline */
+}
+
+/* Optional: Change active state for better UX */
+.navbar-nav .nav-link.active {
+  background-color: transparent !important; /* No background */
+  color: white; !important; /* Optional: Change text color */
+}
+.navbar-nav .nav-link {
+  color: white; /* Default text color */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Zoom-in effect on hover */
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1); /* Zoom in */
+  
+}
+
+.nav ul li a{
+  color: white;
+}
+.navbar-toggler{
+  background-color: white;
+}
+.navbar-nav{
+  gap: 40px;
+}
+.dropdown-item {
+  color: black; /* Default text color for dropdown items */
+  background: transparent;
+}
+
+.header,.banner{
+  background-image: url(../image/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*header end*/
+
+
+
+/*banner start*/
+.banner{
+  padding: 0 0 400px;
+}
+.b_h1{
+  font-size: 74px;
+  color: white;
+  line-height: 80px;
+}
+.b_p{
+color: gray;
+font-size: 20px;
+padding: 0 320px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background-color: black; /* Optional background color */
+  justify-content: center;
+}
+
+
+.search-bar {
+  position: relative;
+  display: flex;
+  width: 300px; /* Form width */
+  background: rgba(255, 255, 255, 0.5); /* 50% opacity background */
+  border-radius: 30px; /* Rounded corners */
+  padding: 0 10px;
+  
+}
+
+
+.search-bar input[type="search"] {
+  border: none;
+  background: transparent;
+  width: 100%;
+ 
+  color: black;
+  outline: none;
+  font-size: 16px;
+}
+
+
+.search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: black; /* Icon color */
+  padding: 5px;
+}
+.search-btn:focus,
+.search-bar input[type="search"]:focus {
+  outline: none !important; /* Ensure no focus outline */
+  box-shadow: none !important; /* Remove any shadow that may appear */
+}
+
+.search-btn i {
+  font-size: 18px; /* Icon size */
+}
+/*banner end*/
+
+/*choose start*/
+.choose{
+  background-color: #F5F5F5;
+  padding: 100px 0;
+}
+.c_h2{
+  font-size: 42px;
+  font-weight: 700;
+  color: black;
+
+}
+.c_text{
+  padding-left: 12px;
+}
+.c_h4{
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+}
+.c_p{
+  color: #1E1E1E;
+}
+
+.button{
+   display: flex;
+  align-items: center;
+  padding-left: 0;
+
+}
+.btn{
+  color:  #E58411 ;
+}
+.icon{
+  margin-top: 4px;
+  color: #E58411;
+}
+/*choose end*/
+/*product start*/
+.product{
+  padding: 20px 0 0;
+}
+.p_h1{
+  font-size: 42px;
+  font-weight: 700;
+  color: black;
+}
+.p_nav{
+  padding: 30px 0 50px;
+
+}
+.p_nav ul li{
+  background-color: #EEEEEE;
+}
+.nav-tabs{
+  border: none;
+  border-color: none;
+  gap: 10px;
+}
+.nav-link{
+  color: black;
+
+ 
+}
+.nav-tabs .nav-link{
+  color:gray;
+
+}
+.p_btn{
+  padding-top: 30px;
+  padding-left: 0;
+}
+/*product end*/
+/*experienc start*/
+.experience{
+  padding: 100px 0;
+}
+.e_text{
+  padding: 48px 0 0 13px;
+}
+.e_p1{
+   color: #E58411;
+   text-transform: uppercase;
+}
+.e_h2{
+  font-size: 50px;
+  color: black;
+  font-weight: 700;
+}
+.e_p{
+  color: black;
+}
+.e_b{
+  padding-left: 0;
+}
+/*experience end*/
+/*metarial start*/
+.metarial{
+  padding: 0 0 100px;
+
+}
+.m_text{
+  padding: 70px 13px 0 13px;
+}
+.m_p1{
+  color: #E58411;
+   text-transform: uppercase;
+}
+.m_h2{
+  font-size: 42px;
+  font-weight: 700;
+  color: black;
+}
+.m_p{
+  color: black;
+}
+/*metarial end*/
+/*testimony start*/
+
+.testimony{}
+.t_texT{}
+.t_p{ 
+   color: #E58411;
+   text-transform: uppercase;}
+.t_h1{
+  font-size: 52px;
+  font-weight: 700;
+  color: black;
+}
+.t_img{
+  padding-top: 40px;
+}
+
+/*testimony end*/
+/*footer1 start*/
+.footer1{
+  padding-top: 40px;
+}
+.f_text{
+ padding-left: 5px;
+}
+.f_text h2{
+  font-size: 35px;
+  font-weight: 700;
+  color: black;
+}
+.f_text p{
+  color: black;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.fo_text{
+  
+  color: black;
+}
+.f_p{
+  color: #E58411;
+   text-transform: uppercase;
+   padding-bottom: 25px;
+   padding-top: 10px;
+}
+/*footer1 end*/
+/*footer2 start*/
+.footer1,.footer2{
+  background-color: #F7F7F7;
+}
+.footer2{
+  padding: 40px;
+}
+/*footer2 end*/
